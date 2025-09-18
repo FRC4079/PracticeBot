@@ -7,6 +7,8 @@ import com.pathplanner.lib.controllers.PPHolonomicDriveController
 import edu.wpi.first.math.controller.PIDController
 import edu.wpi.first.math.geometry.Translation2d
 import edu.wpi.first.math.kinematics.SwerveDriveKinematics
+import xyz.malefic.frc.pingu.MagicPingu
+import xyz.malefic.frc.pingu.Pingu
 
 /** Class containing global values for the robot.  */
 object RobotParameters {
@@ -157,4 +159,26 @@ object RobotParameters {
         const val CAMERA_TWO_ANGLE_DEG: Double = 37.5
         const val OFFSET_TOWARD_MID_RIGHT: Double = 15.0
     }
+}
+
+object ElevatorParameters {
+    @JvmField
+    val ELEVATOR_PINGU: Pingu = Pingu(5.0, 0.0, 0.0, 0.35, 0.5199, 0.42) // g could be 0.42
+
+    // MM ↓
+
+    @JvmField
+    val ELEVATOR_MAGIC_PINGU = MagicPingu(90.0, 180.0, 0.0)
+
+    @Suppress("ktlint:standard:property-naming")
+    const val ELEVATOR_SOFT_LIMIT_DOWN: Double = 0.0
+
+    @Suppress("ktlint:standard:property-naming")
+    const val ELEVATOR_SOFT_LIMIT_UP: Double = 65.0
+
+    @JvmField
+    var elevatorUp: Boolean = true
+
+    @JvmField
+    var isSoftLimitEnabled: Boolean = false
 }
