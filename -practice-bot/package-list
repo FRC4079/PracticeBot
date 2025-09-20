@@ -26,6 +26,8 @@ $dokka.location:frc.robot.subsystems/Elevator/elevatorDown/#/PointingToDeclarati
 $dokka.location:frc.robot.subsystems/Elevator/elevatorMovement/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/elevator-movement.html
 $dokka.location:frc.robot.subsystems/Elevator/initializeLoggedNetworkPID/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/initialize-logged-network-p-i-d.html
 $dokka.location:frc.robot.subsystems/Elevator/setToBeSetState/#frc.robot.utils.emu.ElevatorState/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/set-to-be-set-state.html
+$dokka.location:frc.robot.subsystems/Intake///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/index.html
+$dokka.location:frc.robot.subsystems/Intake/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/periodic.html
 $dokka.location:frc.robot.subsystems/LED///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/index.html
 $dokka.location:frc.robot.subsystems/LED/highTideFlow/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/high-tide-flow.html
 $dokka.location:frc.robot.subsystems/LED/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/periodic.html
@@ -37,6 +39,12 @@ $dokka.location:frc.robot.subsystems/LED/setPurpleColor/#/PointingToDeclaration/
 $dokka.location:frc.robot.subsystems/LED/setRGB/#kotlin.Int#kotlin.Int#kotlin.Int/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/set-r-g-b.html
 $dokka.location:frc.robot.subsystems/LED/setRed/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/set-red.html
 $dokka.location:frc.robot.subsystems/LED/setTan/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/set-tan.html
+$dokka.location:frc.robot.subsystems/OuttakePivot///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/index.html
+$dokka.location:frc.robot.subsystems/OuttakePivot/pivotDown/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/pivot-down.html
+$dokka.location:frc.robot.subsystems/OuttakePivot/pivotUp/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/pivot-up.html
+$dokka.location:frc.robot.subsystems/OuttakeShooter///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-shooter/index.html
+$dokka.location:frc.robot.subsystems/OuttakeShooter/shooterBackward/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-shooter/shooter-backward.html
+$dokka.location:frc.robot.subsystems/OuttakeShooter/shooterForward/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-shooter/shooter-forward.html
 $dokka.location:frc.robot.subsystems/PhotonModule///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/index.html
 $dokka.location:frc.robot.subsystems/PhotonModule/PhotonModule/#kotlin.String?#edu.wpi.first.math.geometry.Transform3d?#edu.wpi.first.apriltag.AprilTagFieldLayout?/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/-photon-module.html
 $dokka.location:frc.robot.subsystems/PhotonModule/getAllUnreadResults/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/get-all-unread-results.html
@@ -137,6 +145,18 @@ $dokka.location:frc.robot.utils.emu/ElevatorState///PointingToDeclaration/-prac
 $dokka.location:frc.robot.utils.emu/ElevatorState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/get-entries.html
 $dokka.location:frc.robot.utils.emu/ElevatorState/valueOf/#kotlin.String/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/value-of.html
 $dokka.location:frc.robot.utils.emu/ElevatorState/values/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/values.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState.DOWN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/-d-o-w-n/index.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState.UP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/-u-p/index.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState///PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/index.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/get-entries.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState/valueOf/#kotlin.String/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/value-of.html
+$dokka.location:frc.robot.utils.emu/OuttakePivotState/values/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-pivot-state/values.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState.BACKWARD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/-b-a-c-k-w-a-r-d/index.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState.FORWARD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/-f-o-r-w-a-r-d/index.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState///PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/index.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/get-entries.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState/valueOf/#kotlin.String/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/value-of.html
+$dokka.location:frc.robot.utils.emu/OuttakeShooterState/values/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/values.html
 $dokka.location:frc.robot.utils////PointingToDeclaration/-practice-bot/frc.robot.utils/index.html
 $dokka.location:frc.robot.utils/Dash///PointingToDeclaration/-practice-bot/frc.robot.utils/-dash/index.html
 $dokka.location:frc.robot.utils/Dash/log/#kotlin.String?#TypeParam(bounds=[edu.wpi.first.util.WPISerializable?])/PointingToDeclaration/-practice-bot/frc.robot.utils/-dash/log.html
@@ -153,6 +173,7 @@ $dokka.location:frc.robot.utils/Direction/getEntries/#/PointingToDeclaration/-p
 $dokka.location:frc.robot.utils/Direction/valueOf/#kotlin.String/PointingToDeclaration/-practice-bot/frc.robot.utils/-direction/value-of.html
 $dokka.location:frc.robot.utils/Direction/values/#/PointingToDeclaration/-practice-bot/frc.robot.utils/-direction/values.html
 $dokka.location:frc.robot.utils/ElevatorParameters///PointingToDeclaration/-practice-bot/frc.robot.utils/-elevator-parameters/index.html
+$dokka.location:frc.robot.utils/IntakeParameters///PointingToDeclaration/-practice-bot/frc.robot.utils/-intake-parameters/index.html
 $dokka.location:frc.robot.utils/Kommand///PointingToDeclaration/-practice-bot/frc.robot.utils/-kommand/index.html
 $dokka.location:frc.robot.utils/Kommand/drive/#frc.robot.utils.controller.GamingController#kotlin.Boolean/PointingToDeclaration/-practice-bot/frc.robot.utils/-kommand/drive.html
 $dokka.location:frc.robot.utils/Kommand/resetPidgey/#/PointingToDeclaration/-practice-bot/frc.robot.utils/-kommand/reset-pidgey.html
@@ -163,6 +184,7 @@ $dokka.location:frc.robot.utils/PIDVController/PIDVController/#edu.wpi.first.mat
 $dokka.location:frc.robot.utils/PIDVController/PIDVController/#kotlin.Double#kotlin.Double#kotlin.Double#kotlin.Double/PointingToDeclaration/-practice-bot/frc.robot.utils/-p-i-d-v-controller/-p-i-d-v-controller.html
 $dokka.location:frc.robot.utils/PIDVController/getV/#/PointingToDeclaration/-practice-bot/frc.robot.utils/-p-i-d-v-controller/get-v.html
 $dokka.location:frc.robot.utils/PIDVController/setV/#kotlin.Double/PointingToDeclaration/-practice-bot/frc.robot.utils/-p-i-d-v-controller/set-v.html
+$dokka.location:frc.robot.utils/PivotParameters///PointingToDeclaration/-practice-bot/frc.robot.utils/-pivot-parameters/index.html
 $dokka.location:frc.robot.utils/RobotParameters.MotorParameters///PointingToDeclaration/-practice-bot/frc.robot.utils/-robot-parameters/-motor-parameters/index.html
 $dokka.location:frc.robot.utils/RobotParameters.PhotonVisionConstants///PointingToDeclaration/-practice-bot/frc.robot.utils/-robot-parameters/-photon-vision-constants/index.html
 $dokka.location:frc.robot.utils/RobotParameters.SwerveParameters.PIDParameters///PointingToDeclaration/-practice-bot/frc.robot.utils/-robot-parameters/-swerve-parameters/-p-i-d-parameters/index.html
