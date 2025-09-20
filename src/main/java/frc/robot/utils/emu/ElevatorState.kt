@@ -6,9 +6,9 @@ package frc.robot.utils.emu
 enum class ElevatorState(
     @JvmField val pos: Double,
 ) {
-    UP(65.0),
-    UPPER_UP(48.75),
-    MIDDLE(32.5),
-    LOWER_DOWN(16.25),
-    DOWN(0.0),
+    L4(65.0),
+    L3(48.75),
+    L2(32.5),
+    L1(16.25),
+    L0(0.0),
 }
