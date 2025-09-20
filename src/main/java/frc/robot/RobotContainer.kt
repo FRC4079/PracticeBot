@@ -8,6 +8,8 @@ import frc.robot.commands.Kommand.drive
 import frc.robot.commands.Kommand.resetPidgey
 import frc.robot.commands.Kommand.setTelePid
 import frc.robot.subsystems.Elevator
+import frc.robot.subsystems.OuttakePivot
+import frc.robot.subsystems.OuttakeShooter
 import frc.robot.subsystems.Swerve
 import frc.robot.utils.RobotParameters.SwerveParameters.Thresholds
 import frc.robot.utils.controller.GamingController
@@ -69,6 +71,24 @@ object RobotContainer {
             }
             press(RIGHT_BUMPER) {
                 Elevator.elevatorMovement()
+            }
+
+            //
+
+            press(LEFT_TRIGGER) {
+                OuttakePivot.pivotDown()
+            }
+            press(Button.RIGHT_TRIGGER) {
+                OuttakePivot.pivotUp()
+            }
+
+            //
+
+            press(Button.LEFT_STICK) {
+                OuttakeShooter.shooterBackward()
+            }
+            press(RIGHT_STICK) {
+                OuttakeShooter.shooterForward()
             }
         }
     }

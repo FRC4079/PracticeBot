@@ -182,3 +182,47 @@ object ElevatorParameters {
     @JvmField
     var isSoftLimitEnabled: Boolean = false
 }
+
+object IntakeParameters {
+    @JvmField
+    val INTAKE_PINGU: Pingu = Pingu(5.0, 0.0, 0.0, 0.35, 0.5199, 0.42) // g could be 0.42
+
+    // MM ↓
+
+    @JvmField
+    val INTAKE_MAGIC_PINGU = MagicPingu(90.0, 180.0, 0.0)
+
+    @Suppress("ktlint:standard:property-naming")
+    const val INTAKE_SOFT_LIMIT_DOWN: Double = 0.0
+
+    @Suppress("ktlint:standard:property-naming")
+    const val INTAKE_SOFT_LIMIT_UP: Double = 65.0
+
+    @JvmField
+    var intakeUp: Boolean = true
+
+    @JvmField
+    var isSoftLimitEnabled: Boolean = false
+}
+
+object PivotParameters {
+    @JvmField
+    val PIVOT_PINGU: Pingu = Pingu(5.0, 0.0, 0.0, 0.35, 0.5199, 0.42) // g could be 0.42
+
+    // MM ↓
+
+    @JvmField
+    val PIVOT_MAGIC_PINGU = MagicPingu(90.0, 180.0, 0.0)
+
+    @Suppress("ktlint:standard:property-naming")
+    const val PIVOT_SOFT_LIMIT_DOWN: Double = 0.0
+
+    @Suppress("ktlint:standard:property-naming")
+    const val PIVOT_SOFT_LIMIT_UP: Double = 65.0
+
+    @JvmField
+    var pivotUp: Boolean = true
+
+    @JvmField
+    var isSoftLimitEnabled: Boolean = false
+}
