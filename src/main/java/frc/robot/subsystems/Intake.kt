@@ -18,6 +18,7 @@ import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj2.command.SubsystemBase
 import frc.robot.subsystems.Elevator.elevatorDown
+import frc.robot.subsystems.Elevator.toBeSetState
 import frc.robot.utils.IntakeParameters.INTAKE_MAGIC_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_SOFT_LIMIT_DOWN
@@ -150,6 +151,6 @@ object Intake : SubsystemBase() {
     }
 
     fun shootCoral() {
-        Elevator.elevatorMove(ElevatorState.L4)
+        Elevator.elevatorMove(toBeSetState)
     }
 }

@@ -61,6 +61,20 @@ object RobotContainer {
 
             //
 
+            press(DPAD_UP) {
+                Elevator.setToBeSetState(level = ElevatorState.L4)
+            }
+            press(Button.DPAD_DOWN) {
+                Elevator.setToBeSetState(level = ElevatorState.L0)
+            }
+            press(Button.DPAD_RIGHT) {
+                Elevator.setToBeSetState(level = ElevatorState.L3)
+            }
+            press(Button.DPAD_LEFT) {
+                Elevator.setToBeSetState(level = ElevatorState.L2)
+            }
+            //
+
             press(RIGHT_STICK) {
                 OuttakeShooter.shootMotor()
             }

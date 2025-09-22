@@ -10,6 +10,7 @@ import com.ctre.phoenix6.hardware.TalonFX
 import com.ctre.phoenix6.signals.InvertedValue
 import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.SubsystemBase
+import frc.robot.subsystems.Elevator.toBeSetState
 import frc.robot.subsystems.OuttakeShooter.shooterMotor
 import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
