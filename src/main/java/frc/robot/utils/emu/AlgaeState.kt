@@ -1,8 +1,8 @@
 package frc.robot.utils.emu
 
-enum class OuttakePivotState(
+enum class AlgaeState(
     @JvmField val pos: Double,
 ) {
-    UP(67.0),
     DOWN(0.0),
+    UP(67.0),
 }

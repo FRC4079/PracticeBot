@@ -14,14 +14,15 @@ import com.ctre.phoenix6.controls.VoltageOut
 import com.ctre.phoenix6.hardware.TalonFX
 import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
+import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.SubsystemBase
 import frc.robot.subsystems.OuttakePivot.pivotMotor
 import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_DOWN
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_UP
+import frc.robot.utils.emu.AlgaeState
 import frc.robot.utils.emu.ElevatorState
-import frc.robot.utils.emu.OuttakePivotState
 import org.littletonrobotics.junction.networktables.LoggedNetworkNumber
 import xyz.malefic.frc.extension.configureWithDefaults
 import xyz.malefic.frc.pingu.AlertPingu.add
@@ -34,6 +35,8 @@ object OuttakePivot : SubsystemBase() {
     private val voltageOut: VoltageOut
     private val motionMagicVoltage: MotionMagicVoltage
     private val cycleOut: DutyCycleOut
+    private val algaeSensor = DigitalInput(1)
+    private var intakingAlgae = false
 
     init {
         pivotMotor.configureWithDefaults(
@@ -60,11 +63,28 @@ object OuttakePivot : SubsystemBase() {
         add(pivotMotor, "pivot")
     }
 
+    /*
     fun pivotDown() {
         pivotMotor.setControl(voltagePivotPos.withPosition(OuttakePivotState.DOWN.pos))
     }
 
     fun pivotUp() {
         pivotMotor.setControl(voltagePivotPos.withPosition(OuttakePivotState.UP.pos))
+    }
+     */
+    fun intakeAlgae() {
+        intakingAlgae = true
+    }
+
+    override fun periodic() {
+        if (intakingAlgae) {
+            pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
+            val ifAlgae = algaeSensor.get()
+            if (ifAlgae) {
+                pivotMotor.stopMotor()
+            } else {
+                pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.UP.pos))
+            }
+        }
     }
 }

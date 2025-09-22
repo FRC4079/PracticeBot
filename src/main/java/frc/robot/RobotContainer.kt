@@ -8,6 +8,7 @@ import frc.robot.commands.Kommand.drive
 import frc.robot.commands.Kommand.resetPidgey
 import frc.robot.commands.Kommand.setTelePid
 import frc.robot.subsystems.Elevator
+import frc.robot.subsystems.Intake
 import frc.robot.subsystems.OuttakePivot
 import frc.robot.subsystems.OuttakeShooter
 import frc.robot.subsystems.Swerve
@@ -54,41 +55,26 @@ object RobotContainer {
      */
     private fun configureBindings() {
         pad.bindings {
-            press(LEFT_BUMPER) {
-                Elevator.setToBeSetState(ElevatorState.L4)
-            }
-            press(DPAD_UP) {
-                Elevator.setToBeSetState(ElevatorState.L3)
-            }
-            press(Button.DPAD_RIGHT) {
-                Elevator.setToBeSetState(ElevatorState.L2)
-            }
-            press(Button.DPAD_DOWN) {
-                Elevator.elevatorDown()
-            }
-            press(Button.DPAD_LEFT) {
-                Elevator.setToBeSetState(ElevatorState.L1)
-            }
-            press(RIGHT_BUMPER) {
-                Elevator.elevatorMovement()
-            }
-
-            //
-
-            press(LEFT_TRIGGER) {
-                OuttakePivot.pivotDown()
-            }
-            press(Button.RIGHT_TRIGGER) {
-                OuttakePivot.pivotUp()
-            }
-
-            //
-
             press(Button.LEFT_STICK) {
-                OuttakeShooter.shooterBackward()
+                OuttakeShooter.intakeCoral()
             }
+
+            //
+
             press(RIGHT_STICK) {
-                OuttakeShooter.shooterForward()
+                OuttakeShooter.shootMotor()
+            }
+
+            //
+
+            press(RIGHT_BUMPER) {
+                Intake.shootCoral()
+            }
+
+            //
+
+            press(LEFT_BUMPER) {
+                OuttakePivot.intakeAlgae()
             }
         }
     }

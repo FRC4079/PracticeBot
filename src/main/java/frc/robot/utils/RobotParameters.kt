@@ -226,3 +226,25 @@ object PivotParameters {
     @JvmField
     var isSoftLimitEnabled: Boolean = false
 }
+
+object ShootParameters {
+    @JvmField
+    val SHOOT_PINGU: Pingu = Pingu(5.0, 0.0, 0.0, 0.35, 0.5199, 0.42) // g could be 0.42
+
+    // MM ↓
+
+    @JvmField
+    val SHOOT_MAGIC_PINGU = MagicPingu(90.0, 180.0, 0.0)
+
+    @Suppress("ktlint:standard:property-naming")
+    const val SHOOT_SOFT_LIMIT_DOWN: Double = 0.0
+
+    @Suppress("ktlint:standard:property-naming")
+    const val SHOOT_SOFT_LIMIT_UP: Double = 65.0
+
+    @JvmField
+    var shootUp: Boolean = true
+
+    @JvmField
+    var isSoftLimitEnabled: Boolean = false
+}

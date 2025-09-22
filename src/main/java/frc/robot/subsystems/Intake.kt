@@ -17,10 +17,12 @@ import com.ctre.phoenix6.hardware.TalonFX
 import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj2.command.SubsystemBase
+import frc.robot.subsystems.Elevator.elevatorDown
 import frc.robot.utils.IntakeParameters.INTAKE_MAGIC_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_SOFT_LIMIT_DOWN
 import frc.robot.utils.IntakeParameters.INTAKE_SOFT_LIMIT_UP
+import frc.robot.utils.emu.ElevatorState
 import xyz.malefic.frc.pingu.AlertPingu.add
 
 object Intake : SubsystemBase() {
@@ -145,5 +147,9 @@ object Intake : SubsystemBase() {
     override fun periodic() {
         intakeStarMotor.set(1.0)
         intakeWheelMotor.set(1.0)
+    }
+
+    fun shootCoral() {
+        Elevator.elevatorMove(ElevatorState.L4)
     }
 }

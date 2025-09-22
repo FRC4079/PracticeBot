@@ -15,7 +15,6 @@ import com.ctre.phoenix6.hardware.TalonFX
 import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj2.command.SubsystemBase
-import frc.robot.subsystems.Elevator.elevatorMotor
 import frc.robot.utils.ElevatorParameters.ELEVATOR_MAGIC_PINGU
 import frc.robot.utils.ElevatorParameters.ELEVATOR_PINGU
 import frc.robot.utils.ElevatorParameters.ELEVATOR_SOFT_LIMIT_DOWN
@@ -25,7 +24,7 @@ import org.littletonrobotics.junction.networktables.LoggedNetworkNumber
 import xyz.malefic.frc.pingu.AlertPingu.add
 
 object Elevator : SubsystemBase() {
-    private val elevatorMotor: TalonFX = TalonFX(0)
+    val elevatorMotor: TalonFX = TalonFX(0)
     private val elevatorConfigs: TalonFXConfiguration = TalonFXConfiguration()
     private val voltagePos: PositionVoltage = PositionVoltage(0.0)
     private val posRequest: PositionDutyCycle
@@ -133,6 +132,10 @@ object Elevator : SubsystemBase() {
 
     fun elevatorMovement() {
         elevatorMotor.setControl(voltagePos.withPosition(toBeSetState.pos))
+    }
+
+    fun elevatorMove(state: ElevatorState) {
+        elevatorMotor.setControl(voltagePos.withPosition(state.pos))
     }
 
     fun elevatorDown() {
