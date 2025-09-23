@@ -131,15 +131,7 @@ object Elevator : SubsystemBase() {
             )
     }
 
-    fun elevatorMovement() {
-        elevatorMotor.setControl(voltagePos.withPosition(toBeSetState.pos))
-    }
-
     fun elevatorMove(state: ElevatorState) {
         elevatorMotor.setControl(voltagePos.withPosition(state.pos))
-    }
-
-    fun elevatorDown() {
-        elevatorMotor.setControl(voltagePos.withPosition(ElevatorState.L0.pos))
     }
 }

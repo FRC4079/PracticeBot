@@ -11,7 +11,6 @@ import com.ctre.phoenix6.signals.InvertedValue
 import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.SubsystemBase
 import frc.robot.subsystems.Elevator.toBeSetState
-import frc.robot.subsystems.OuttakeShooter.shooterMotor
 import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_DOWN
@@ -67,14 +66,5 @@ object OuttakeShooter : SubsystemBase() {
                 shooterMotor.setControl(voltageShooterPos.withPosition(OuttakeShooterState.FORWARD.pos))
             }
         }
-    }
-
-    fun intakeCoral() {
-        intakingCoral = true
-    }
-
-    fun shootMotor() {
-        Elevator.elevatorMove(ElevatorState.L4)
-        shooterMotor.setControl(voltageShooterPos.withPosition(65.0))
     }
 }

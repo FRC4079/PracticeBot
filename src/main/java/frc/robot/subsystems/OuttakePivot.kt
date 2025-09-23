@@ -16,6 +16,7 @@ import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.SubsystemBase
+import frc.robot.subsystems.Intake.motorShoot
 import frc.robot.subsystems.OuttakePivot.pivotMotor
 import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
@@ -23,13 +24,14 @@ import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_DOWN
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_UP
 import frc.robot.utils.emu.AlgaeState
 import frc.robot.utils.emu.ElevatorState
+import frc.robot.utils.emu.OuttakeShooterState
 import org.littletonrobotics.junction.networktables.LoggedNetworkNumber
 import xyz.malefic.frc.extension.configureWithDefaults
 import xyz.malefic.frc.pingu.AlertPingu.add
 
 object OuttakePivot : SubsystemBase() {
-    private val pivotMotor: TalonFX = TalonFX(0)
-    private val voltagePivotPos: PositionVoltage = PositionVoltage(0.0)
+    val pivotMotor: TalonFX = TalonFX(0)
+    val voltagePivotPos: PositionVoltage = PositionVoltage(0.0)
     private var posRequest: PositionDutyCycle
     private var velocityRequest: VelocityTorqueCurrentFOC
     private val voltageOut: VoltageOut
@@ -74,6 +76,18 @@ object OuttakePivot : SubsystemBase() {
      */
     fun intakeAlgae() {
         intakingAlgae = true
+    }
+
+    fun shootMotor() {
+        Elevator.elevatorMove(ElevatorState.L4)
+        pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
+    }
+
+    fun shootCoral() {
+        val shoot = OuttakeShooterState.FORWARD
+        Elevator.elevatorMove(state = Elevator.toBeSetState)
+        pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
+        motorShoot(state = shoot)
     }
 
     override fun periodic() {
