@@ -17,6 +17,7 @@ import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj.DigitalInput
 import edu.wpi.first.wpilibj2.command.SubsystemBase
 import frc.robot.subsystems.Intake.motorShoot
+import frc.robot.subsystems.Intake.stopMotor
 import frc.robot.subsystems.OuttakePivot.pivotMotor
 import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
@@ -28,6 +29,7 @@ import frc.robot.utils.emu.OuttakeShooterState
 import org.littletonrobotics.junction.networktables.LoggedNetworkNumber
 import xyz.malefic.frc.extension.configureWithDefaults
 import xyz.malefic.frc.pingu.AlertPingu.add
+import java.lang.Thread.sleep
 
 object OuttakePivot : SubsystemBase() {
     val pivotMotor: TalonFX = TalonFX(0)
@@ -80,14 +82,20 @@ object OuttakePivot : SubsystemBase() {
 
     fun shootMotor() {
         Elevator.elevatorMove(ElevatorState.L4)
+        pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.UP.pos))
+        sleep(2000)
         pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
+        Elevator.elevatorMove(ElevatorState.L0)
     }
 
     fun shootCoral() {
         val shoot = OuttakeShooterState.FORWARD
-        Elevator.elevatorMove(state = Elevator.toBeSetState)
+        Elevator.elevatorMove(Elevator.toBeSetState)
         pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
         motorShoot(state = shoot)
+        stopMotor()
+        pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.UP.pos))
+        Elevator.elevatorMove(ElevatorState.L0)
     }
 
     override fun periodic() {
@@ -97,7 +105,9 @@ object OuttakePivot : SubsystemBase() {
             if (ifAlgae) {
                 pivotMotor.stopMotor()
             } else {
-                pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.UP.pos))
+                pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.MIDDLE.pos))
+                sleep(2000)
+                pivotMotor.setControl(voltagePivotPos.withPosition(AlgaeState.DOWN.pos))
             }
         }
     }

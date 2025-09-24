@@ -202,4 +202,8 @@ object Intake : SubsystemBase() {
     fun motorShoot(state: OuttakeShooterState) {
         shooterMotor.setControl(voltageShooterPos.withPosition(state.pos))
     }
+
+    fun stopMotor() {
+        shooterMotor.stopMotor()
+    }
 }
