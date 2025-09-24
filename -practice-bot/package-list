@@ -30,6 +30,7 @@ $dokka.location:frc.robot.subsystems/Intake///PointingToDeclaration/-practice-b
 $dokka.location:frc.robot.subsystems/Intake/intakeCoral/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/intake-coral.html
 $dokka.location:frc.robot.subsystems/Intake/motorShoot/#frc.robot.utils.emu.OuttakeShooterState/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/motor-shoot.html
 $dokka.location:frc.robot.subsystems/Intake/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/periodic.html
+$dokka.location:frc.robot.subsystems/Intake/stopMotor/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/stop-motor.html
 $dokka.location:frc.robot.subsystems/LED///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/index.html
 $dokka.location:frc.robot.subsystems/LED/highTideFlow/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/high-tide-flow.html
 $dokka.location:frc.robot.subsystems/LED/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-l-e-d/periodic.html
@@ -144,6 +145,7 @@ $dokka.location:frc.robot.utils.controller/GamingController/setRumble/#kotlin.Fl
 $dokka.location:frc.robot.utils.controller/Trigger///PointingToDeclaration/-practice-bot/frc.robot.utils.controller/-trigger/index.html
 $dokka.location:frc.robot.utils.emu////PointingToDeclaration/-practice-bot/frc.robot.utils.emu/index.html
 $dokka.location:frc.robot.utils.emu/AlgaeState.DOWN///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-algae-state/-d-o-w-n/index.html
+$dokka.location:frc.robot.utils.emu/AlgaeState.MIDDLE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-algae-state/-m-i-d-d-l-e/index.html
 $dokka.location:frc.robot.utils.emu/AlgaeState.UP///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-algae-state/-u-p/index.html
 $dokka.location:frc.robot.utils.emu/AlgaeState///PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-algae-state/index.html
 $dokka.location:frc.robot.utils.emu/AlgaeState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-algae-state/get-entries.html
