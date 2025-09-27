@@ -2,8 +2,6 @@
 
 package frc.robot.subsystems
 
-import com.ctre.phoenix6.configs.MotionMagicConfigs
-import com.ctre.phoenix6.configs.TalonFXConfiguration
 import com.ctre.phoenix6.controls.DutyCycleOut
 import com.ctre.phoenix6.controls.MotionMagicVoltage
 import com.ctre.phoenix6.controls.PositionDutyCycle
@@ -18,10 +16,10 @@ import frc.robot.utils.IntakeParameters.INTAKE_MAGIC_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_PINGU
 import frc.robot.utils.IntakeParameters.INTAKE_SOFT_LIMIT_DOWN
 import frc.robot.utils.IntakeParameters.INTAKE_SOFT_LIMIT_UP
-import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
-import frc.robot.utils.PivotParameters.PIVOT_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_DOWN
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_UP
+import frc.robot.utils.ShootParameters.SHOOT_MAGIC_PINGU
+import frc.robot.utils.ShootParameters.SHOOT_PINGU
 import frc.robot.utils.emu.OuttakeShooterState
 import xyz.malefic.frc.extension.configureWithDefaults
 import xyz.malefic.frc.pingu.AlertPingu.add
@@ -55,10 +53,10 @@ object Intake : SubsystemBase() {
 
     init {
         shooterMotor.configureWithDefaults(
-            PIVOT_PINGU,
+            SHOOT_PINGU,
             InvertedValue.CounterClockwise_Positive,
             dutyCycleNeutralDeadband = 0.1,
-            motionMagicPingu = PIVOT_MAGIC_PINGU,
+            motionMagicPingu = SHOOT_MAGIC_PINGU,
         )
         velocityRequest = VelocityTorqueCurrentFOC(0.0)
         posRequest = PositionDutyCycle(0.0)
