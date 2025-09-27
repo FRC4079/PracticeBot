@@ -15,7 +15,6 @@ import com.ctre.phoenix6.hardware.TalonFX
 import com.ctre.phoenix6.signals.InvertedValue
 import com.ctre.phoenix6.signals.NeutralModeValue
 import edu.wpi.first.wpilibj2.command.SubsystemBase
-import frc.robot.subsystems.Elevator.elevatorMotor
 import frc.robot.utils.ElevatorParameters.ELEVATOR_MAGIC_PINGU
 import frc.robot.utils.ElevatorParameters.ELEVATOR_PINGU
 import frc.robot.utils.ElevatorParameters.ELEVATOR_SOFT_LIMIT_DOWN
@@ -43,7 +42,7 @@ object Elevator : SubsystemBase() {
     private var cruiseV: LoggedNetworkNumber? = null
     private var acc: LoggedNetworkNumber? = null
     private var jerk: LoggedNetworkNumber? = null
-    public lateinit var toBeSetState: ElevatorState
+    lateinit var toBeSetState: ElevatorState
 
     init {
         elevatorConfigs.MotorOutput.NeutralMode = NeutralModeValue.Brake

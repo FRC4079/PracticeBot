@@ -8,7 +8,6 @@ import frc.robot.subsystems.Elevator
 import frc.robot.subsystems.Elevator.toBeSetState
 import frc.robot.subsystems.Intake
 import frc.robot.subsystems.OuttakePivot
-import frc.robot.subsystems.ShootCoral
 import frc.robot.utils.emu.ElevatorState
 import org.littletonrobotics.junction.networktables.LoggedDashboardChooser
 import xyz.malefic.frc.emu.Button

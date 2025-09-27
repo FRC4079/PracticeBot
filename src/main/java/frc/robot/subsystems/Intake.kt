@@ -26,7 +26,6 @@ import frc.robot.utils.PivotParameters.PIVOT_MAGIC_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_PINGU
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_DOWN
 import frc.robot.utils.PivotParameters.PIVOT_SOFT_LIMIT_UP
-import frc.robot.utils.emu.ElevatorState
 import frc.robot.utils.emu.OuttakeShooterState
 import xyz.malefic.frc.extension.configureWithDefaults
 import xyz.malefic.frc.pingu.AlertPingu.add
@@ -37,7 +36,6 @@ object Intake : SubsystemBase() {
     private val intakeStarConfigs: TalonFXConfiguration = TalonFXConfiguration()
     private val intakeWheelMotor: TalonFX = TalonFX(0)
     private val intakeWheelConfigs: TalonFXConfiguration = TalonFXConfiguration()
-    private val voltagePos: PositionVoltage = PositionVoltage(0.0)
     private var posStarRequest: PositionDutyCycle
     private var velocityStarRequest: VelocityTorqueCurrentFOC
     private var voltageStarOut: VoltageOut
@@ -142,9 +140,6 @@ object Intake : SubsystemBase() {
         intakeWheelConfigs.Slot0.kV = INTAKE_PINGU.v!!
         intakeWheelConfigs.Slot0.kS = INTAKE_PINGU.s!!
         intakeWheelMotor.configurator.apply(intakeWheelConfigs)
-        val intakeWheelMotorCurrentConfig = CurrentLimitsConfigs()
-        val intakeWheelMotorRampConfig = ClosedLoopRampsConfigs()
-        val intakeWheelSoftLimitConfig = SoftwareLimitSwitchConfigs()
         intakeMotorCurrentConfig.SupplyCurrentLimit = 40.79
         intakeMotorCurrentConfig.SupplyCurrentLimitEnable = true
         intakeWheelMotor.configurator.apply(intakeMotorCurrentConfig)

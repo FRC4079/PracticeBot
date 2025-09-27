@@ -4,5 +4,4 @@ enum class OuttakeShooterState(
     @JvmField val pos: Double,
 ) {
     FORWARD(1.0),
-    BACKWARD(-1.0),
 }
