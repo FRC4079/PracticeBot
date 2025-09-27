@@ -24,7 +24,6 @@ $dokka.location:frc.robot.subsystems////PointingToDeclaration/-practice-bot/frc
 $dokka.location:frc.robot.subsystems/Elevator///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/index.html
 $dokka.location:frc.robot.subsystems/Elevator/elevatorMove/#frc.robot.utils.emu.ElevatorState/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/elevator-move.html
 $dokka.location:frc.robot.subsystems/Elevator/getElevatorMotor/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/get-elevator-motor.html
-$dokka.location:frc.robot.subsystems/Elevator/initializeLoggedNetworkPID/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/initialize-logged-network-p-i-d.html
 $dokka.location:frc.robot.subsystems/Elevator/setToBeSetState/#frc.robot.utils.emu.ElevatorState/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-elevator/set-to-be-set-state.html
 $dokka.location:frc.robot.subsystems/Intake///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/index.html
 $dokka.location:frc.robot.subsystems/Intake/intakeCoral/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-intake/intake-coral.html
