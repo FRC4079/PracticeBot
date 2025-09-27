@@ -28,15 +28,6 @@ object Elevator : SubsystemBase() {
     private val voltageOut: VoltageOut
     private val motionMagicVoltage: MotionMagicVoltage
     private val cycleOut: DutyCycleOut
-    private var elevatorP: LoggedNetworkNumber? = null
-    private var elevatorI: LoggedNetworkNumber? = null
-    private var elevatorD: LoggedNetworkNumber? = null
-    private var elevatorV: LoggedNetworkNumber? = null
-    private var elevatorS: LoggedNetworkNumber? = null
-    private var elevatorG: LoggedNetworkNumber? = null
-    private var cruiseV: LoggedNetworkNumber? = null
-    private var acc: LoggedNetworkNumber? = null
-    private var jerk: LoggedNetworkNumber? = null
     lateinit var toBeSetState: ElevatorState
 
     init {
