@@ -49,8 +49,6 @@ $dokka.location:frc.robot.subsystems/OuttakePivot/intakeAlgae/#/PointingToDeclar
 $dokka.location:frc.robot.subsystems/OuttakePivot/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/periodic.html
 $dokka.location:frc.robot.subsystems/OuttakePivot/shootCoral/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/shoot-coral.html
 $dokka.location:frc.robot.subsystems/OuttakePivot/shootMotor/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-pivot/shoot-motor.html
-$dokka.location:frc.robot.subsystems/OuttakeShooter///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-shooter/index.html
-$dokka.location:frc.robot.subsystems/OuttakeShooter/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-outtake-shooter/periodic.html
 $dokka.location:frc.robot.subsystems/PhotonModule///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/index.html
 $dokka.location:frc.robot.subsystems/PhotonModule/PhotonModule/#kotlin.String?#edu.wpi.first.math.geometry.Transform3d?#edu.wpi.first.apriltag.AprilTagFieldLayout?/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/-photon-module.html
 $dokka.location:frc.robot.subsystems/PhotonModule/getAllUnreadResults/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-module/get-all-unread-results.html
@@ -68,8 +66,6 @@ $dokka.location:frc.robot.subsystems/PhotonVision/getY/#/PointingToDeclaration/
 $dokka.location:frc.robot.subsystems/PhotonVision/getYaw/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-vision/get-yaw.html
 $dokka.location:frc.robot.subsystems/PhotonVision/hasTag/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-vision/has-tag.html
 $dokka.location:frc.robot.subsystems/PhotonVision/periodic/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-photon-vision/periodic.html
-$dokka.location:frc.robot.subsystems/ShootCoral///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-shoot-coral/index.html
-$dokka.location:frc.robot.subsystems/ShootCoral/shootCoral/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-shoot-coral/shoot-coral.html
 $dokka.location:frc.robot.subsystems/Swerve///PointingToDeclaration/-practice-bot/frc.robot.subsystems/-swerve/index.html
 $dokka.location:frc.robot.subsystems/Swerve/chassisSpeedsDrive/#edu.wpi.first.math.kinematics.ChassisSpeeds?/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-swerve/chassis-speeds-drive.html
 $dokka.location:frc.robot.subsystems/Swerve/getAutoSpeeds/#/PointingToDeclaration/-practice-bot/frc.robot.subsystems/-swerve/get-auto-speeds.html
@@ -160,7 +156,6 @@ $dokka.location:frc.robot.utils.emu/ElevatorState///PointingToDeclaration/-prac
 $dokka.location:frc.robot.utils.emu/ElevatorState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/get-entries.html
 $dokka.location:frc.robot.utils.emu/ElevatorState/valueOf/#kotlin.String/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/value-of.html
 $dokka.location:frc.robot.utils.emu/ElevatorState/values/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-elevator-state/values.html
-$dokka.location:frc.robot.utils.emu/OuttakeShooterState.BACKWARD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/-b-a-c-k-w-a-r-d/index.html
 $dokka.location:frc.robot.utils.emu/OuttakeShooterState.FORWARD///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/-f-o-r-w-a-r-d/index.html
 $dokka.location:frc.robot.utils.emu/OuttakeShooterState///PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/index.html
 $dokka.location:frc.robot.utils.emu/OuttakeShooterState/getEntries/#/PointingToDeclaration/-practice-bot/frc.robot.utils.emu/-outtake-shooter-state/get-entries.html
