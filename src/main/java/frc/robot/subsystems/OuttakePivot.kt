@@ -59,15 +59,6 @@ object OuttakePivot : SubsystemBase() {
         add(pivotMotor, "pivot")
     }
 
-    /*
-    fun pivotDown() {
-        pivotMotor.setControl(voltagePivotPos.withPosition(OuttakePivotState.DOWN.pos))
-    }
-
-    fun pivotUp() {
-        pivotMotor.setControl(voltagePivotPos.withPosition(OuttakePivotState.UP.pos))
-    }
-     */
     fun intakeAlgae() {
         intakingAlgae = true
     }

@@ -11,16 +11,10 @@ import frc.robot.subsystems.OuttakePivot
 import frc.robot.utils.emu.ElevatorState
 import org.littletonrobotics.junction.networktables.LoggedDashboardChooser
 import xyz.malefic.frc.emu.Button
-import xyz.malefic.frc.emu.Button.A
-import xyz.malefic.frc.emu.Button.B
 import xyz.malefic.frc.emu.Button.DPAD_UP
 import xyz.malefic.frc.emu.Button.LEFT_BUMPER
-import xyz.malefic.frc.emu.Button.LEFT_TRIGGER
 import xyz.malefic.frc.emu.Button.RIGHT_BUMPER
 import xyz.malefic.frc.emu.Button.RIGHT_STICK
-import xyz.malefic.frc.emu.Button.START
-import xyz.malefic.frc.emu.Button.X
-import xyz.malefic.frc.emu.Button.Y
 import xyz.malefic.frc.pingu.Bingu.bindings
 
 /**
