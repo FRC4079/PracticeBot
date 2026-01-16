@@ -1,7 +1,7 @@
 [versions]
 dokka = "2.0.0"
 spotless = "8.0.0"
-gradleRIO = "2025.3.2"
+gradleRIO = "2026.2.1"
 junit = "5.13.4"
 malefix = "1.2.6"
 
